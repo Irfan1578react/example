@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Irfan">
+    <meta name="description" content="This page is used for the learning for html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table description and learning</title>
+</head>
+
+<body>
+    <header>
+        <h1>Table creation and learning</h1>
+    </header>
+
+    <main>
+        <article>
+            <h3>Table creation</h3>
+            <table>
+                <caption>My daily Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Morning</th>
+                        <td><time datetime="08:00">8am</time>-<time datetime="11:00">11am</time></td>
+                        <td>Learning html content</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Break</th>
+                        <td><time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time></td>
+                        <td>Lunch</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">AfterNoon</th>
+                        <td rowspan="2">All other time</td>
+                        <td>Free time</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Night</th>
+                        <td>Sleep</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                        <tr>
+                            <td colspan="3">Eat,Sleep and code everyday.</td>
+                        </tr>    
+                </tfoot>
+                
+            </table>
+        </article>
+
+
+        <article>
+            <h3>getting input</h3>
+
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Your favorite fruit</legend>
+                    <p>
+                        <label for="fruits">Multiple choice for fruits</label>
+                        <select name="fruits" id="fruits" multiple size="3">
+                            <optgroup label="seasonal fruits">
+                                <option value="1">Banana</option>
+                                <option value="2">Apple</option>
+                            </optgroup>
+                            <optgroup label="rare fruits">
+                                <option value="3" selected>Strawberry</option>
+                                <option value="4">Kiwi</option>
+                            </optgroup>
+                        </select>
+
+                    </p>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Languages</legend>
+                    <p>
+                        <label for="languages">Languages</label>
+                        <input type="text" name="languages" id="languages" list="language-list">
+                        <datalist id="language-list">
+                            <option value="english">English</option>
+                            <option value="tamil">Tamil</option>
+                            <option value="french">French</option>
+                        </datalist>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your favorite food</legend>
+                    <p>
+                        <label for="chicken">Chicken</label>
+                        <input type="radio" name="food" id="chicken" value="chicken">
+                    </p>
+                    <p>
+                        <label>
+                            Mutton
+                            <input name="food" type="radio" id="mutton" value="mutton">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Others
+                            <input name="food" type="radio" id="others" value="others">
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Your favorite pet</legend>
+                    <p>
+                        <label>
+                            Dog
+                            <input type="checkbox" id="Dog" name="pet" value="Dog">
+                        </label>
+                    </p>    
+                    <p>    
+                        <label>
+                            Cat
+                            <input type="checkbox" id="Cat" name="pet" value="Cat">
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Your message</label>
+
+                    <p>
+                        <textarea name="message" id="message" rows="10" cols="30" placeholder="Type your message here"></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+
+
+        </article>
+
+
+    </main>
+
+    <footer>
+        <p>&copy;</p>
+    </footer>
+
+</body>
+
+</html>
